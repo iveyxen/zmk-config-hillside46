@@ -36,10 +36,10 @@
  */
 
             bindings = <
-&kp GRAVE  &kp Q  &kp W  &kp E  &kp R       &kp T                                                             &kp Y         &kp U       &kp I      &kp O    &kp P      &kp LEFT_BRACKET
-&kp TAB    &kp A  &kp S  &kp D  &kp F       &kp G                                                             &kp H         &kp J       &kp K      &kp L    &kp SEMI   &kp SINGLE_QUOTE
-&mo 3      &kp Z  &kp X  &kp C  &kp V       &kp B     &mo 1                                  &mo 1            &kp N         &kp M       &kp COMMA  &kp DOT  &kp SLASH  &mo 2
-                                &kp ESCAPE  &kp LALT  &kp BACKSPACE  &kp ENTER    &kp SPACE  &kp RIGHT_SHIFT  &kp CAPSLOCK  &kp DELETE
+&lt 3 GRAVE  &kp Q  &kp W  &kp E  &kp R       &kp T                                                             &kp Y         &kp U       &kp I      &kp O    &kp P      &kp LEFT_BRACKET
+&kp TAB      &kp A  &kp S  &kp D  &kp F       &kp G                                                             &kp H         &kp J       &kp K      &kp L    &kp SEMI   &kp SINGLE_QUOTE
+&kp LCTRL    &kp Z  &kp X  &kp C  &kp V       &kp B     &mo 1                                  &mo 1            &kp N         &kp M       &kp COMMA  &kp DOT  &kp SLASH  &lt 2 RIGHT_BRACKET
+                                  &kp ESCAPE  &kp LALT  &kp BACKSPACE  &kp ENTER    &kp SPACE  &kp RIGHT_SHIFT  &kp CAPSLOCK  &kp DELETE
             >;
         };
 
@@ -58,8 +58,6 @@
 &kp LCTRL     &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp CAPS                                &kp Redo         &kp NUMBER_6  &kp N7         &kp N8        &kp N9                &kp N0                 &kp RCTRL
                                                            &kp ESC       &kp TAB      &kp LEFT_SHIFT  &kp ENTER    &kp ENTER  &kp RIGHT_SHIFT  &kp TAB       &kp RIGHT_WIN
             >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         sym_layer {
@@ -74,11 +72,9 @@
             bindings = <
 &kp KP_NUM  &kp SLASH     &kp N7        &kp N8        &kp N9        &kp MINUS                                                      &kp C_VOL_UP  &kp HOME  &kp UP           &kp PG_UP      &kp RPAR  &kp DEL
 &none       &kp ASTERISK  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS                                                       &kp C_MUTE    &kp LEFT  &kp DOWN         &kp RIGHT      &kp RGUI  &kp END
-&trans      &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp LBRC      &kp DOT    &sk RALT                                &kp K_APP   &kp C_VOL_DN  &kp END   &kp PRINTSCREEN  &kp PAGE_DOWN  &none     &kp RCTRL
+&trans      &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT    &sk RALT                                &kp K_APP   &kp C_VOL_DN  &kp END   &kp PRINTSCREEN  &kp PAGE_DOWN  &none     &kp RCTRL
                                                       &trans        &trans     &kp C_PREVIOUS  &kp ENTER    &kp ENTER  &kp C_NEXT  &trans        &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         adj_layer {
@@ -92,12 +88,10 @@
 
             bindings = <
 &none       &to 0         &to 0         &to 0         &none         &none                                                       &none   &kp F11  &kp F12       &kp PRINTSCREEN  &ext_power EP_OFF  &ext_power EP_ON
-&sys_reset  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                                &none   &none    &none         &none            &none              &sys_reset
+&sys_reset  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                                &none   &none    &none         &none            &ext_power EP_TOG  &sys_reset
 &none       &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHIFT    &none         &bt BT_CLR                    &bt BT_CLR_ALL  &none   &none    &out OUT_USB  &out OUT_BLE     &none              &bootloader
                                                       &trans        &trans        &trans      &trans    &trans  &trans          &trans  &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
