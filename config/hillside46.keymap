@@ -88,10 +88,10 @@
  */
 
             bindings = <
-&none       &to 0         &to 0         &to 0         &none         &none                                                       &none            &kp F11          &kp F12          &kp PRINTSCREEN  &ext_power EP_OFF  &ext_power EP_ON
-&sys_reset  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                                &rgb_ug RGB_TOG  &rgb_ug RGB_ON   &rgb_ug RGB_OFF  &rgb_ug RGB_EFF  &ext_power EP_TOG  &sys_reset
-&none       &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHIFT    &bt BT_NXT    &bt BT_CLR                    &bt BT_CLR_ALL  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &out OUT_USB     &out OUT_BLE     &none              &bootloader
-                                                      &trans        &trans        &trans      &trans    &trans  &trans          &trans           &trans
+&none       &to 0         &to 0          &to 0          &bt BT_PRV     &bt BT_NXT                                                   &none            &kp F11          &kp F12          &kp PRINTSCREEN  &ext_power EP_OFF  &ext_power EP_ON
+&sys_reset  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                                                 &rgb_ug RGB_TOG  &rgb_ug RGB_ON   &rgb_ug RGB_OFF  &rgb_ug RGB_EFF  &ext_power EP_TOG  &sys_reset
+&none       &kp LGUI      &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &bt BT_CLR                    &bt BT_CLR_ALL  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &out OUT_USB     &out OUT_BLE     &none              &bootloader
+                                                        &trans         &trans         &trans      &trans    &trans  &trans          &trans           &trans
             >;
         };
     };
