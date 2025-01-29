@@ -22,10 +22,10 @@
 
         colemak-dh {
             bindings = <
-&kp RBKT   &kp Q       &kp W       &kp F        &kp P         &kp B                                                   &kp J     &kp L         &kp U        &kp Y         &kp SEMI    &kp LBKT
-&kp GRAVE  &mt LALT A  &mt LGUI R  &mt LCTRL S  &mt LSHIFT T  &kp G                                                   &kp M     &mt LSHIFT N  &mt LCTRL E  &mt LGUI I    &mt LALT O  &kp APOS
-&kp BSLH   &kp Z       &mt RALT X  &kp C        &kp D         &kp V        &lang_switch                    &trans     &kp K     &kp H         &kp COMMA    &mt RALT DOT  &kp FSLH    &trans
-                                                &kp ESC       &lt 2 SPACE  &kp TAB       &trans    &trans  &kp ENTER  &kp BSPC  &kp DEL
+&kp RBKT   &kp Q       &kp W       &kp F        &kp P         &kp B                                                     &kp J            &kp L         &kp U        &kp Y         &kp SEMI    &kp LBKT
+&kp GRAVE  &mt LALT A  &mt LGUI R  &mt LCTRL S  &mt LSHIFT T  &kp G                                                     &kp M            &mt LSHIFT N  &mt LCTRL E  &mt LGUI I    &mt LALT O  &kp APOS
+&kp BSLH   &kp Z       &mt RALT X  &kp C        &kp D         &kp V        &lang_switch                    &trans       &kp K            &kp H         &kp COMMA    &mt RALT DOT  &kp FSLH    &trans
+                                                &kp ESC       &lt 2 SPACE  &kp TAB       &trans    &trans  &lt 7 ENTER  &lt 6 BACKSPACE  &kp DEL
             >;
         };
 
