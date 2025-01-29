@@ -33,21 +33,21 @@
             bindings = <
 &kp RBKT   &kp Q       &kp W       &kp E        &kp R         &kp T                                                 &kp Y     &kp U         &kp I        &kp O         &kp P               &kp LBKT
 &kp GRAVE  &mt LALT A  &mt LGUI S  &mt LCTRL D  &mt LSHIFT F  &kp G                                                 &kp H     &mt LSHIFT J  &mt LCTRL K  &mt LGUI L    &mt LALT SEMICOLON  &kp APOS
-&kp BSLH   &kp Z       &mt RALT X  &kp C        &kp V         &kp B      &lang_switch                     &soft_off &kp N     &kp M         &kp COMMA    &mt RALT DOT  &kp FSLH            &trans
+&kp BSLH   &kp Z       &mt RALT X  &kp C        &kp V         &kp B      &lang_switch                     &none &kp N     &kp M         &kp COMMA    &mt RALT DOT  &kp FSLH            &trans
                                                 &kp ESC       &lt 2 SPACE  &kp TAB       &trans    &trans  &lt 7 ENTER  &lt 6 BACKSPACE  &kp DEL
             >;
         };
 
-        sym {
+        nav {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans                                     &trans      &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
-&trans  &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans                                     &caps_word  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
-&trans  &trans    &kp RALT  &trans     &trans     &trans  &trans                    &trans   &trans      &trans    &trans     &trans     &trans     &trans
-                                       &trans     &trans  &trans  &trans    &trans  &kp RET  &kp BSPC    &kp DEL
+&none  &none    &none    &none     &none     &none                                     &none      &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none
+&none  &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &none                                     &caps_word  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none
+&none  &none    &kp RALT  &none     &none     &none  &none                    &none   &none      &none    &none     &none     &none     &none
+                                       &none     &none  &none  &none    &none  &kp RET  &kp BSPC    &kp DEL
             >;
         };
 
-        nav {
+        sym {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                    &trans  &trans  &trans  &trans  &trans  &trans
