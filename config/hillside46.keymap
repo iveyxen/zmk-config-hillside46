@@ -1,6 +1,8 @@
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/rgb.h>
 
 &mt {
     tapping-term-ms = <160>;
@@ -31,19 +33,19 @@
 
         qwerty_ukr {
             bindings = <
-&kp RBKT   &kp Q       &kp W       &kp E        &kp R         &kp T                                                 &kp Y     &kp U         &kp I        &kp O         &kp P               &kp LBKT
-&kp GRAVE  &mt LALT A  &mt LGUI S  &mt LCTRL D  &mt LSHIFT F  &kp G                                                 &kp H     &mt LSHIFT J  &mt LCTRL K  &mt LGUI L    &mt LALT SEMICOLON  &kp APOS
-&kp BSLH   &kp Z       &mt RALT X  &kp C        &kp V         &kp B      &lang_switch                     &none &kp N     &kp M         &kp COMMA    &mt RALT DOT  &kp FSLH            &trans
+&kp RBKT   &kp Q       &kp W       &kp E        &kp R         &kp T                                                     &kp Y            &kp U         &kp I        &kp O         &kp P               &kp LBKT
+&kp GRAVE  &mt LALT A  &mt LGUI S  &mt LCTRL D  &mt LSHIFT F  &kp G                                                     &kp H            &mt LSHIFT J  &mt LCTRL K  &mt LGUI L    &mt LALT SEMICOLON  &kp APOS
+&kp BSLH   &kp Z       &mt RALT X  &kp C        &kp V         &kp B        &lang_switch                    &none        &kp N            &kp M         &kp COMMA    &mt RALT DOT  &kp FSLH            &trans
                                                 &kp ESC       &lt 2 SPACE  &kp TAB       &trans    &trans  &lt 7 ENTER  &lt 6 BACKSPACE  &kp DEL
             >;
         };
 
         nav {
             bindings = <
-&none  &none    &none    &none     &none     &none                                     &none      &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none
-&none  &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &none                                     &caps_word  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none
-&none  &none    &kp RALT  &none     &none     &none  &none                    &none   &none      &none    &none     &none     &none     &none
-                                       &none     &none  &none  &none    &none  &kp RET  &kp BSPC    &kp DEL
+&none  &none     &none     &none      &none      &none                                   &none       &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none
+&none  &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &none                                   &caps_word  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none
+&none  &none     &kp RALT  &none      &none      &none   &none                  &none    &none       &none     &none      &none      &none      &none
+                                      &none      &trans  &none  &none    &none  &kp RET  &kp BSPC    &kp DEL
             >;
         };
 
@@ -58,10 +60,10 @@
 
         media {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans     &trans     &trans                                        &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF  &trans
+&trans  &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans                                        &rgb_ug RGB_BRI  &kp C_PREV       &kp C_VOL_DN     &kp C_VOL_UP     &kp C_NEXT       &trans
+&trans  &trans    &kp RALT  &trans     &trans     &trans  &trans                    &trans      &rgb_ug RGB_SPI  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &trans
+                                       &trans     &trans  &trans  &trans    &trans  &kp C_STOP  &kp C_PP         &kp C_MUTE
             >;
         };
 
