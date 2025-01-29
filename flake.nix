@@ -26,7 +26,7 @@
         board = "nice_nano_v2";
         shield = "hillside46_%PART%";
 
-        zephyrDepsHash = "";
+        zephyrDepsHash = "sha256-yRzN+df/kzHEOWTiQLRLsPNRBDM4fV5qmLa6SevYKxc=";
 
         meta = {
           description = "ZMK firmware";
