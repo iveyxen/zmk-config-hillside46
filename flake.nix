@@ -25,6 +25,11 @@
 
         board = "nice_nano_v2";
         shield = "hillside46_%PART%";
+        # enableZmkStudio = true;
+        extraCmakeFlags = [
+          # "-DCONFIG_ZMK_STUDIO=y"
+          "-DCONFIG_ZMK_POINTING=y"
+        ];
 
         zephyrDepsHash = "sha256-yRzN+df/kzHEOWTiQLRLsPNRBDM4fV5qmLa6SevYKxc=";
 
