@@ -40,7 +40,7 @@
 &kp RBKT   &kp Q       &kp W       &kp F        &kp P         &kp B                                                    &kp J            &kp L         &kp U        &kp Y         &kp SINGLE_QUOTE  &kp LBKT
 &kp GRAVE  &mt LALT A  &mt LGUI R  &mt LCTRL S  &mt LSHIFT T  &kp G                                                    &kp M            &mt LSHIFT N  &mt LCTRL E  &mt LGUI I    &mt LALT O        &kp SEMICOLON
 &kp BSLH   &kp Z       &mt RALT X  &kp C        &kp D         &kp V        &lang_switch                  &lang_switch  &kp K            &kp H         &kp COMMA    &mt RALT DOT  &kp FSLH          &kp MINUS
-                                                &lt 3 ESC     &lt 2 SPACE  &lt 4 TAB     &none    &none  &lt 7 ENTER   &lt 5 BACKSPACE  &kp DEL
+                                                &lt 4 ESC     &lt 3 SPACE  &lt 5 TAB     &none    &none  &lt 8 ENTER   &lt 6 BACKSPACE  &kp DEL
             >;
         };
 
@@ -50,6 +50,15 @@
 &kp GRAVE  &mt LALT A  &mt LGUI S  &mt LCTRL D  &mt LSHIFT F  &kp G                                                 &kp H   &mt LSHIFT J  &mt LCTRL K  &mt LGUI L    &mt LALT SEMICOLON  &kp APOS
 &kp BSLH   &kp Z       &mt RALT X  &kp C        &kp V         &kp B   &lang_switch                    &lang_switch  &kp N   &kp M         &kp COMMA    &mt RALT DOT  &kp FSLH            &kp MINUS
                                                 &trans        &trans  &trans        &trans    &trans  &trans        &trans  &trans
+            >;
+        };
+
+        colemak-dh-geimu {
+            bindings = <
+&kp GRAVE   &kp Q  &kp W  &kp F  &kp P    &kp B                                                     &kp J            &kp L         &kp U        &kp Y         &kp SINGLE_QUOTE  &kp LBKT
+&kp LSHIFT  &kp A  &kp R  &kp S  &kp T    &kp G                                                     &kp M            &kp LSHIFT N  &kp LCTRL E  &kp LGUI I    &kp LALT O        &kp SEMICOLON
+&kp LCTRL   &kp Z  &kp X  &kp C  &kp D    &kp V      &tog 2                           &lang_switch  &kp K            &kp H         &kp COMMA    &mt RALT DOT  &kp FSLH          &kp MINUS
+                                 &kp ESC  &kp SPACE  &kp TAB  &kp BACKSLASH    &none  &lt 8 ENTER   &lt 6 BACKSPACE  &kp DEL
             >;
         };
 
@@ -102,17 +111,8 @@
             bindings = <
 &none  &kp F12  &kp F7  &kp F8  &kp F9   &kp PSCRN                                        &none  &none      &none      &none     &none     &none
 &none  &kp F11  &kp F4  &kp F5  &kp F6   &kp SCROLLLOCK                                   &none  &kp LSHFT  &kp LCTRL  &kp LGUI  &kp LALT  &none
-&none  &kp F10  &kp F1  &kp F2  &kp F3   &kp C_PAUSE     &tog 8                   &none   &none  &none      &none      &kp RALT  &none     &none
+&none  &kp F10  &kp F1  &kp F2  &kp F3   &kp C_PAUSE     &tog 2                   &none   &none  &none      &none      &kp RALT  &none     &none
                                 &kp ESC  &kp SPACE       &kp TAB  &none    &none  &trans  &none  &none
-            >;
-        };
-
-        colemak-dh-geimu {
-            bindings = <
-&kp GRAVE   &kp Q  &kp W  &kp F  &kp P    &kp B                                                     &kp J            &kp L         &kp U        &kp Y         &kp SINGLE_QUOTE  &kp LBKT
-&kp LSHIFT  &kp A  &kp R  &kp S  &kp T    &kp G                                                     &kp M            &kp LSHIFT N  &kp LCTRL E  &kp LGUI I    &kp LALT O        &kp SEMICOLON
-&kp LCTRL   &kp Z  &kp X  &kp C  &kp D    &kp V      &tog 8                           &lang_switch  &kp K            &kp H         &kp COMMA    &mt RALT DOT  &kp FSLH          &kp MINUS
-                                 &kp ESC  &kp SPACE  &kp TAB  &kp BACKSLASH    &none  &lt 7 ENTER   &lt 5 BACKSPACE  &kp DEL
             >;
         };
     };
