@@ -10,11 +10,14 @@
     flavor = "tap-preferred";
 };
 
-&mmv { acceleration-exponent = <5>; };
+&mmv {
+    time-to-max-speed-ms = <150>;
+    acceleration-exponent = <10>;
+};
 
 &msc {
-    time-to-max-speed-ms = <200>;
-    acceleration-exponent = <3>;
+    time-to-max-speed-ms = <150>;
+    acceleration-exponent = <7>;
 };
 
 / {
@@ -99,6 +102,15 @@
 &none  &kp F11  &kp F4  &kp F5  &kp F6   &kp SCROLLLOCK                                   &none  &kp LSHFT  &kp LCTRL  &kp LGUI  &kp LALT  &none
 &none  &kp F10  &kp F1  &kp F2  &kp F3   &kp C_PAUSE     &none                    &none   &none  &none      &none      &kp RALT  &none     &none
                                 &kp ESC  &kp SPACE       &kp TAB  &none    &none  &trans  &none  &none
+            >;
+        };
+
+        colemak-dh-geimu {
+            bindings = <
+&kp GRAVE   &kp Q  &kp W  &kp F  &kp P  &kp B                                                    &kp J            &kp L         &kp U        &kp Y         &kp SINGLE_QUOTE  &kp LBKT
+&kp LSHIFT  &LT A  &kp R  &kp S  &kp T  &kp G                                                    &kp M            &kp LSHIFT N  &kp LCTRL E  &kp LGUI I    &kp LALT O        &kp SEMICOLON
+&kp LCTRL   &kp Z  &kp X  &kp C  &kp D  &kp V        &lang_switch                  &lang_switch  &kp K            &kp H         &kp COMMA    &mt RALT DOT  &kp FSLH          &kp MINUS
+                                                &kp ESC     &kp SPACE  &kp TAB     &none    &none  &lt 7 ENTER   &lt 5 BACKSPACE  &kp DEL
             >;
         };
     };
