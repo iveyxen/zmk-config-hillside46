@@ -8,7 +8,14 @@
 #include <dt-bindings/zmk/rgb.h>
 
 &mt {
-    tapping-term-ms = <160>;
+    quick-tap-ms = <150>;
+    tapping-term-ms = <150>;
+    flavor = "tap-preferred";
+};
+
+&lt {
+    quick-tap-ms = <150>;
+    tapping-term-ms = <150>;
     flavor = "tap-preferred";
 };
 
@@ -53,10 +60,10 @@
             >;
         };
 
-        colemak-dh-geimu {
+        geimu {
             bindings = <
 &kp GRAVE   &kp Q  &kp W  &kp F  &kp P    &kp B                                                     &kp J            &kp L         &kp U        &kp Y         &kp SINGLE_QUOTE  &kp LBKT
-&kp LSHIFT  &kp A  &kp R  &kp S  &kp T    &kp G                                                     &kp M            &kp LSHIFT N  &kp LCTRL E  &kp LGUI I    &kp LALT O        &kp SEMICOLON
+&kp LSHIFT  &kp A  &kp R  &kp S  &kp T    &kp G                                                     &kp M            &mt LSHIFT N  &mt LCTRL E  &mt LGUI I    &mt LALT O        &kp SEMICOLON
 &kp LCTRL   &kp Z  &kp X  &kp C  &kp D    &kp V      &tog 2                           &lang_switch  &kp K            &kp H         &kp COMMA    &mt RALT DOT  &kp FSLH          &kp MINUS
                                  &kp ESC  &kp SPACE  &kp TAB  &kp BACKSLASH    &none  &lt 8 ENTER   &lt 6 BACKSPACE  &kp DEL
             >;
