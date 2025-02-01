@@ -44,10 +44,10 @@
 
         colemak-dh {
             bindings = <
-&kp RBKT   &kp Q       &kp W       &kp F        &kp P         &kp B                                                    &kp J            &kp L         &kp U        &kp Y         &kp SINGLE_QUOTE  &kp LBKT
-&kp GRAVE  &mt LALT A  &mt LGUI R  &mt LCTRL S  &mt LSHIFT T  &kp G                                                    &kp M            &mt LSHIFT N  &mt LCTRL E  &mt LGUI I    &mt LALT O        &kp SEMICOLON
-&kp BSLH   &kp Z       &mt RALT X  &kp C        &kp D         &kp V        &lang_switch                  &lang_switch  &kp K            &kp H         &kp COMMA    &mt RALT DOT  &kp FSLH          &kp MINUS
-                                                &lt 4 ESC     &lt 3 SPACE  &lt 5 TAB     &none    &none  &lt 8 ENTER   &lt 6 BACKSPACE  &kp DEL
+&kp RBKT   &kp Q       &kp W       &kp F        &kp P         &kp B                                                           &kp J            &kp L         &kp U        &kp Y         &kp SINGLE_QUOTE  &kp LBKT
+&kp GRAVE  &mt LALT A  &mt LGUI R  &mt LCTRL S  &mt LSHIFT T  &kp G                                                           &kp M            &mt LSHIFT N  &mt LCTRL E  &mt LGUI I    &mt LALT O        &kp SEMICOLON
+&kp BSLH   &kp Z       &mt RALT X  &kp C        &kp D         &kp V        &lang_switch                         &lang_switch  &kp K            &kp H         &kp COMMA    &mt RALT DOT  &kp FSLH          &kp MINUS
+                                                &lt 4 ESC     &lt 3 SPACE  &lt 5 TAB     &sk LG(LS(LA(LCTRL)))  &none  &lt 8 ENTER   &lt 6 BACKSPACE  &kp DEL
             >;
         };
 
