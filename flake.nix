@@ -31,7 +31,7 @@
           "-DCONFIG_ZMK_POINTING=y"
         ];
 
-        zephyrDepsHash = "sha256-yRzN+df/kzHEOWTiQLRLsPNRBDM4fV5qmLa6SevYKxc=";
+        zephyrDepsHash = "";
 
         meta = {
           description = "ZMK firmware";
